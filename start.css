@@ -1,0 +1,38 @@
+body{
+    display: grid;
+    grid-template-areas:
+        "yello yello yello yello"
+        "blu orang orang orang"
+        "blu redd redd redd"
+        "blu gren gren gren" ;
+}
+
+
+#yellow{
+    grid-area: yello;
+}
+#blue{
+    grid-area: blu;
+}
+#orange{
+    grid-area: orang;
+}
+#red{
+    grid-area: redd;
+}
+#green{
+    grid-area: gren;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+}
+li{
+    width: 20%;
+}
+
+#yellow li:first-child{
+    width: calc(20%*3);
+
+}
